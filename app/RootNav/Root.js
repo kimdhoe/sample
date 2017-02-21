@@ -14,6 +14,6 @@ const tabBarConfiguration = {
   }
 }
 
-export const TabBar = TabNavigator(routes,tabBarConfiguration)
+const Root = TabNavigator(routes,tabBarConfiguration)
 
-// 이걸 인덱스index로?
+export default Root

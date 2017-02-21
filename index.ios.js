@@ -6,12 +6,13 @@ import { AppRegistry } from 'react-native'
 import { Provider } from 'react-redux'
 import store from './app/store'
 // Navigation
-import TabBarNavigation from './app/tabBar/views/TabBarNavigation'
+import RootNav from './app/RootNav'
+
 class SampleNavigation extends React.Component {
   render(){
     return(
       <Provider store={store}>
-        <TabBarNavigation />
+        <RootNav />
       </Provider>
     )
   }
