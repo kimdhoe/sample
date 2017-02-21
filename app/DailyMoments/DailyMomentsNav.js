@@ -15,4 +15,6 @@ const stackNavigatorConfiguration = {
   initialRoute: 'TabOneScreenOne'
 }
 
-export const NavigatorTabOne = StackNavigator(routeConfiguration,stackNavigatorConfiguration)
+const DailyMomentsNav = StackNavigator(routeConfiguration,stackNavigatorConfiguration)
+
+export default DailyMomentsNav

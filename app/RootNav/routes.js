@@ -1,9 +1,9 @@
-import TabOneNavigation from '../tabOne/views/TabOneNavigation'
+import DailyMoments from '../DailyMoments'
 import TabTwoNavigation from '../tabTwo/views/TabTwoNavigation'
 import TabThreeNavigation from '../tabThree/views/TabThreeNavigation'
 
 const routes = {
-  TabOneNavigation: { screen: TabOneNavigation },
+  DailyMoments: { screen: DailyMoments },
   TabTwoNavigation: { screen: TabTwoNavigation },
   TabThreeNavigation: { screen: TabThreeNavigation },
 }

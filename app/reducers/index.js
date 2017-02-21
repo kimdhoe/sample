@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
 
-import { NavigatorTabOne } from '../tabOne/navigationConfiguration'
+import DailyMomentsNav from '../DailyMoments/DailyMomentsNav'
 import { NavigatorTabTwo } from '../tabTwo/navigationConfiguration'
 import { NavigatorTabThree } from '../tabThree/navigationConfiguration'
 import Root from '../RootNav/Root'
@@ -16,7 +16,7 @@ const reducer = combineReducers({
     return Root.router.getStateForAction(action,state)
   },
 
-  tabOne: (state, action) => NavigatorTabOne.router.getStateForAction(action,state),
+  tabOne: (state, action) => DailyMomentsNav.router.getStateForAction(action,state),
   tabTwo: (state, action) => NavigatorTabTwo.router.getStateForAction(action,state),
   tabThree: (state, action) => NavigatorTabThree.router.getStateForAction(action,state),
 })

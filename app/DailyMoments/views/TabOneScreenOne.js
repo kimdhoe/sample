@@ -1,26 +1,27 @@
 import React from 'react'
 import { View, Text, TouchableOpacity } from 'react-native'
-export default class TabOneScreenTwo extends React.Component {
+
+export default class TabOneScreenOne extends React.Component {
   render(){
+    console.log(this.props)
     return(
       <View style={{
         flex:1,
-        backgroundColor:'orange',
+        backgroundColor:'red',
         alignItems:'center',
         justifyContent:'center'
       }}>
-        <Text>{ 'Tab One Screen Two' }</Text>
+        <Text>{ 'Tab One Screen One' }</Text>
         <TouchableOpacity
-          onPress={ () => this.props.navigation.goBack() }
+          onPress={ () => this.props.navigation.navigate('TabOneScreenTwo') }
           style={{
             padding:20,
             borderRadius:20,
-            backgroundColor:'purple',
+            backgroundColor:'yellow',
             marginTop:20
           }}>
-          <Text>{'Go back a screen this tab'}</Text>
+          <Text>{'Go to next screen this tab'}</Text>
         </TouchableOpacity>
-
       </View>
     )
   }

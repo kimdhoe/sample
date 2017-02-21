@@ -1,16 +1,11 @@
-// React
 import React from 'react'
-
-// Navigation
-import { addNavigationHelpers } from 'react-navigation'
-import { NavigatorTabOne } from '../navigationConfiguration'
-
-// Redux
 import { connect } from 'react-redux'
+import { addNavigationHelpers } from 'react-navigation'
 
 // Icon
 import Icon from 'react-native-vector-icons/FontAwesome'
 
+import DailyMomentsNav from './DailyMomentsNav'
 
 const mapStateToProps = (state) => {
   return {
@@ -29,16 +24,16 @@ class TabOneNavigation extends React.Component {
 
   render(){
     const { navigationState, dispatch, dailyMoments } = this.props
-    // console.log('Daily Moments', dailyMoments)
-    console.log(this.props)
+    console.log(dailyMoments)
     return (
-      <NavigatorTabOne
+      <DailyMomentsNav
         navigation={
           addNavigationHelpers({
             dispatch: dispatch,
             state: navigationState
           })
         }
+        dailyMoments={dailyMoments}
       />
     )
   }
